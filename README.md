@@ -1,15 +1,8 @@
-CUED PhD thesis template
+DIBRIS unige PhD thesis template
 ========================
 
-[![Join the chat at https://gitter.im/kks32/phd-thesis-template](https://badges.gitter.im/kks32/phd-thesis-template.svg)](https://gitter.im/kks32/phd-thesis-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-> A LaTeX / XeLaTeX / LuaLaTeX PhD thesis template for Cambridge University Engineering Department.
-
-[![Build Status](https://api.travis-ci.org/kks32/phd-thesis-template.svg)](https://travis-ci.org/kks32/phd-thesis-template)
 [![License MIT](http://img.shields.io/badge/license-MIT-brightgreen.svg)](license.md)
-[![Version](http://img.shields.io/badge/version-2.2-brightgreen.svg)](https://github.com/kks32/phd-thesis-template/releases/latest)
 
-## Author(s)
-*   Krishna Kumar
 
 --------------------------------------------------------------------------------
 ## Features
@@ -42,7 +35,6 @@ CUED PhD thesis template
 
 *   Add supervisor and/or advisor to your PhD thesis or MPhil report
 
-*   A LyX Template is now available at [https://github.com/kks32/PhDThesisLyX/](https://github.com/kks32/PhDThesisLyX/)
 
 --------------------------------------------------------------------------------
 
@@ -400,134 +392,11 @@ To include custom to-do notes in your pdf document use  `\mynote{Hey! I have a n
 
 -------------------------------------------------------------------------------
 
-## Frequently Asked Questions
 
-#### _Q1_: Where can I find the thesis formatting guidelines this class is based on?
-
-[https://www.admin.cam.ac.uk/students/studentregistry/exams/submission/phd/format.html](https://www.admin.cam.ac.uk/students/studentregistry/exams/submission/phd/format.html)
-
-
-#### _Q2_: Where can I find newer versions of the University of Cambridge crest/logos?
-
-The university updates its crest every now and then. You can find up-to-date
-logos on [this page](http://www.cam.ac.uk/brand-resources/about-the-logo/logo-downloads)
-(subject to change without notice).
-
-Download and exchange the new logos with `University_Crest.eps` and/or `University_Crest.pdf`. I'll try to keep the crest up to date.
-
-#### _Q3_: Where can I find the guidelines to submit my thesis and requirements?
-
-[Preparing to submit:](https://www.admin.cam.ac.uk/students/studentregistry/exams/submission/phd/preparing.html)
-
-[Formatting styles:](https://www.admin.cam.ac.uk/students/studentregistry/exams/submission/phd/format.html)
-
-[Submitting the dissertation](https://www.admin.cam.ac.uk/students/studentregistry/exams/submission/phd/submitting.html)
-
-#### _Q4_: How can I count the number of words in my thesis?
-
-You can run the following command (Linux/Unix):
-    `ps2ascii thesis.pdf | wc -w` (eg., result 2713 words)
-
-or
-    `pdftotext thesis.pdf | wc thesis.txt -w` (eg., result 2690 words)
-
-or
-    `texcount -inc *.tex` (eg., result 2341 words)
-
-#### _Q5_: How do I use a system font (libertine)?
-
-To use a system font (open type) font with XeLaTeX, please select `customfont` option in the `documentclass` in `thesis.tex`. Add the path and font name to the custom font definition in `preamble.tex`
-
-    \ifsetCustomFont
-      \setmainfont[
-        Path              = ./libertine/opentype/,
-        Extension         = .otf,
-        UprightFont = LinLibertine_R,
-        BoldFont = LinLibertine_RZ, % Regular Semibold
-        ItalicFont = LinLibertine_RI,
-        BoldItalicFont = LinLibertine_RZI, % Regular Semibold Italic
-      ] {libertine}
-      \newfontfamily\libertinesystemfont{Linux Libertine O}
-    \fi
-
-Please use XeLaTeX tool chain with LaTeXmk.
-
-#### _Q6_: I found a bug in the template. Where do I report bugs?
-
-You can report issues at
-[our GitHub repository](https://github.com/kks32/phd-thesis-template).
-
-You can also mail
-[the developer](https://github.com/kks32/phd-thesis-template/graphs/contributors) directly or contact [Tim Love, CUED](mailto:tpl@eng.cam.ac.uk)
-
-
---------------------------------------------------------------------------------
-## Troubleshooting warnings
-
-#### _W1_: I get the LaTeX Warning: You have requested document class `Classes/PhDThesisPSnPDF`, but the document class provides `PhDThesisPSnPDF`, should I be concerned?
-
-No! Do nothing, or if you don't want any warning messages change the line near the top of the class file to \ProvidesClass{Classes/PhDthesisPSnPDF} if you're not going to install the class file in a more standard location. You can install it in a standard location like `/usr/share/texmf/tex/latex/` and run `texhash` to reconfigure.
-
-#### _W2_:I get the package Fancyhdr Warning: \fancyhead's `E` option without twoside option is useless on input line \# or \#. What should I do?
-
-Nothing. The warning is because the twoside option is also defined in the class, although only the oneside option is currently used.
-
-#### _W3_: I get the Class PhDThesisPSnPDF Warning: Unknown or non-standard option 'something'. Will see if I can load it from the book class. If you get a warning unused global option(s): `something` then the option is not supported! on input line \#.
-
-You are either trying to use a undefined option or a non-standard option which is in the book class but not defined in the PhD Thesis Template. If it can be used it will be loaded and you will get no further warnings. If not, the option you chose is unavailable.
-
-
-#### _W4_: I get LaTeX Warning: Unused global option(s):[something].
-
-You are trying to load an option that is not supported in the PhDThesisClass and the Book Class. Are you sure you are using the right option? Check your spelling!
-
-#### _W5_: I get I'm skipping whatever remains of this command line \# of file thesis.aux \@input{Chapter1/chapter1.aux}
-
-If you are generating a separate abstract for your thesis submission, ignore this warning and good luck with your submission. If you are compiling your thesis and see this warning, please remove the option `abstract` from the document class.
-
-#### _W6_: I get blank pages between chapters
-
-This is normal for a book class. Usually, a new chapter in a book always starts on the right hand side, which is why you see a blank page. You can remove the extra blank page by passing `openany` option to the documentclass. This works for double sided printing. However, if you are printing on a single side, please pass `oneside` option to the document class.
-
-#### _W7_: My references aren't listed in the ordered in which I cite them
-
-This is controlled by the bibliography style. Please use `\bibliographystyle{unsrt}` in `thesis.tex` instead of `apalike`. This applicable only for numerically sorted references.
-
---------------------------------------------------------------------------------
-
-## Known issue(s) / Bugs / Feature requests
-
-*   Hyperlinks doesn't seem to be working in Post-Script file, however works on DVI and PDF (which is produced from the PS file), possibly viewer limitation than a code bug.
-
-*   On older versions of dvips (version 5.97 or below), if your page margins do not appear properly in your PDF, when compiling through DVI >> PS >> PDF, please ensure that you have set a4paper or a5paper in the document class. If you are still having issues you can run:
-
-		ps2pdf -sPAPERSIZE=a4 thesis.ps thesis.pdf
-
-    This issue occurs only when the papersize is not specified in the document class and you are compiling DVI >> PS >> PDF using an older version (5.97 or below) of dvips.
-
-*   Open issues can be tracked at [https://github.com/kks32/phd-thesis-template/issues](https://github.com/kks32/phd-thesis-template/issues). If you would like a new feature to be added to the template, please create an issue and label it as an enhancement.
-*   Please [fork me on github](https://github.com/kks32/phd-thesis-template/fork) and create a pull request, if you would like to contribute to the repo.
-
-
-## ChangeLog
-
-The history of releases can be viewed at [ChangeLog](ChangeLog.md)
-
-
---------------------------------------------------------------------------------
 
 ## Inspirations/Based on
 
 *   Cambridge Computer Laboratory PhD Thesis Template [https://github.com/cambridge/thesis](https://github.com/cambridge/thesis)
 
 *   CUED Version 1.1 Template by H. Banderi
-
-## Acknowlegments
-
-*   Alex Ridge - original idea, code concepts & testing
-
-*   Steven Kaneti - code concepts
-
-*   Tina Schwamb - testing and bug reports
-
-*   John Plaice - Bug fixes
+*   
