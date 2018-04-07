@@ -7,7 +7,7 @@ DIBRIS unige PhD thesis template
 --------------------------------------------------------------------------------
 ## Features
 
-*   Conforms to the Student Registry PhD dissertation guidelines and CUED PhD guidelines
+*   Please use __coverbind__ word document to edit cover bind design of your thesis 
 
 *   Supports LaTeX, XeLaTeX and LuaLaTeX
 
