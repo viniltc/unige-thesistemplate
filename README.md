@@ -1,7 +1,7 @@
 DIBRIS unige PhD thesis template
 ========================
 
-This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template) Latex template system from  
+This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template) Latex template system.
 
 [![License MIT](http://img.shields.io/badge/license-MIT-brightgreen.svg)](license.md)
 
