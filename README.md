@@ -397,9 +397,3 @@ To include custom to-do notes in your pdf document use  `\mynote{Hey! I have a n
 
 
 
-## Inspirations/Based on
-
-*   Cambridge Computer Laboratory PhD Thesis Template [https://github.com/cambridge/thesis](https://github.com/cambridge/thesis)
-
-*   CUED Version 1.1 Template by H. Banderi
-*   
