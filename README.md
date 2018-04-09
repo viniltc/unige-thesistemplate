@@ -9,7 +9,7 @@ This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template
 --------------------------------------------------------------------------------
 ## Features
 
-*   Please use __coverbind__ word document to edit cover bind design of your thesis 
+*   Please use __cover_bind.doc__ word document to edit cover bind design of your final thesis.  
 
 *   Supports LaTeX, XeLaTeX and LuaLaTeX
 
