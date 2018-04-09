@@ -169,19 +169,9 @@ It supports the following custom options in the documentclass in thesis.tex:
 
 ### Title page
 
-The front page (title page) resizes to fit your title length. You can modify the options in `thesis-info.tex`.
+The front page (title page) resizes to fit your title length. You can modify `coverpage` and some options  on `thesis-info.tex`.
 
-* `\subtitle` (optional): Adds a subtitle to your thesis.
 
-* `\college` (optional): This option adds the name of your college on the bottom left.
-
-If `\college` is defined, the bottom of the title page will look like this:
-
-        King's College 			                                         2014
-
-If `\college` is undefined or blank, the `degreedate` will be centered.
-
-                                        2014
 
 
 
