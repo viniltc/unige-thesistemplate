@@ -1,6 +1,8 @@
 DIBRIS unige PhD thesis template
 ========================
 
+This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template) Latex template system from  
+
 [![License MIT](http://img.shields.io/badge/license-MIT-brightgreen.svg)](license.md)
 
 
@@ -182,9 +184,7 @@ If `\college` is undefined or blank, the `degreedate` will be centered.
 
                                         2014
 
-The template offers support to having both the college and university crests or just one of the crests.
 
-* `\collegeshield` (optional): Includes college crest in addition to the university crest. This reformats the front page layout.
 
 ### Abstract separate
 
