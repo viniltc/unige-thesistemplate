@@ -240,6 +240,10 @@ the bottom of the page. Pagewise line numbering is added on every page. `draft` 
 		\ifsetCustomFont
 		  \RequirePackage{Your_Custom_Font}
 		\fi
+		
+### Track changes while reviewing
+
+This option  uses the `changes` package  and I find it very useful. It has a key=value system so most of the things are customizable. You can define different authors and the changes are tracked depending on the id. Please see [user manual](http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/changes/changes.english.pdf) for more details. 
 
 ### Choosing the bibliography style
 
