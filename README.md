@@ -9,7 +9,7 @@ This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template
 --------------------------------------------------------------------------------
 ## Features
 
-*   Please use `cover_bind.doc` word document to edit cover bind of your printed final thesis book.  
+*   Please use `cover_bind.doc` word document to edit cover bind of your final thesis book print.  
 
 *   Supports LaTeX, XeLaTeX and LuaLaTeX
 
