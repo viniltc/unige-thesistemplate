@@ -34,7 +34,9 @@ This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template
 
 *   Draft mode: Draft water mark, timestamp, version numbering and line numbering
 
-*   Add supervisor and/or advisor to your PhD thesis
+*   Add supervisor and/or advisor to your PhD thesis. 
+
+* Format your cover page by editing `coverpage.tex`
 
 
 --------------------------------------------------------------------------------
