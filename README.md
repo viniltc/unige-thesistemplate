@@ -1,4 +1,4 @@
-DIBRIS unige PhD thesis template
+DIBRIS PhD thesis template
 ========================
 
 This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template) Latex template from University of Cambridge
