@@ -1,7 +1,7 @@
 DIBRIS unige PhD thesis template
 ========================
 
-This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template) Latex template system.
+This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template) Latex template from University of Cambridge
 
 [![License MIT](http://img.shields.io/badge/license-MIT-brightgreen.svg)](license.md)
 
@@ -9,7 +9,7 @@ This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template
 --------------------------------------------------------------------------------
 ## Features
 
-*   Please use `cover_bind.doc` word document to edit cover bind design of your final thesis.  
+*   Please use `cover_bind.doc` word document to edit cover bind of your printed final thesis book.  
 
 *   Supports LaTeX, XeLaTeX and LuaLaTeX
 
