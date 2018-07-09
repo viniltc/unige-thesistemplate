@@ -199,6 +199,7 @@ The front page (title page) resizes to fit your title length. You can modify `co
 			\includeonly{Chapter3/chapter3}
 		\fi
 
+
 ### Draft
 
 `draft` adds a watermark `draft` text with timestamp and version number at the top or
@@ -236,7 +237,7 @@ the bottom of the page. Pagewise line numbering is added on every page. `draft` 
 		
 ### Track changes while reviewing
 
-This option  uses  `changes` package,  and I find it very useful. It has a key=value system so most of the things are customizable. You can define different authors and the changes are tracked depending on the id. Please see [user manual](http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/changes/changes.english.pdf) for more details. 
+This option  uses  `changes` package,  and I find it very useful. It has a key=value system so most of the things are customizable. You can define different authors and the changes are tracked depending on the id. Please see [user manual](http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/changes/changes.english.pdf) for more details. (see lines 34-38 `Preamble.tex`)
 
 ### Choosing the bibliography style
 
