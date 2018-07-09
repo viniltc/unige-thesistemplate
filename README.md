@@ -9,7 +9,7 @@ This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template
 --------------------------------------------------------------------------------
 ## Features
 
-*   Please use `cover_bind.doc` word document to edit cover bind of your final thesis book print.  
+*   Please use `cover_bind.doc` word document to edit cover design of your final thesis book.  
 
 *   Supports LaTeX, XeLaTeX and LuaLaTeX
 
@@ -38,7 +38,7 @@ This templte is adapted from [CUED](https://github.com/kks32/phd-thesis-template
 
 *   Add supervisor and/or advisor to your PhD thesis. 
 
-* Format your cover page by editing `coverpage.tex`
+*   Format your cover page by editing `coverpage.tex`
 
 
 --------------------------------------------------------------------------------
